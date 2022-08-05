@@ -1,9 +1,38 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+
+
+import Myself from './components/Myself';
+import React from 'react';
+import "./components/Background.css"
+import Portafolio from './components/Portafolio';
+import Links from './components/Links';
+
+class Background extends React.Component{
+  render(){
+    return (
+      <div className="background">
+        <Myself />
+        <Links />
+        <Portafolio />
+        
+      </div>
+    )
+  }
+}
+
+
 
 function App() {
   return (
+    <div>
+      <Background />
+    </div>
+    
+    
+    /*
     <div className="App">
+      
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -18,7 +47,7 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
+    </div>*/
   );
 }
 
