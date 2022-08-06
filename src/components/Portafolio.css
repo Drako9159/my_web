@@ -1,8 +1,46 @@
+
+@font-face {
+    font-family: montserrat;
+    src: url("../assets/montserrat/Montserrat-Medium.otf");
+  }
+  @font-face {
+    font-family: montserrat-light;
+    src: url("../assets/montserrat/Montserrat-Light.otf");
+  }
+  @font-face {
+    font-family: test;
+    src: url("../assets/montserrat/Montserrat-ExtraBold.otf");
+  }
 #portafolio {
-  background-color: rgb(196, 179, 179);
-  width: 70vw;
-  height: 90vh;
-  position: relative;
-  margin-left: 28vw;
+    
+  background-color: #171717;
+  border: 1px solid rgb(49, 46, 46);
+
+  width: 62vw;
+  margin: 0.5rem;
+  height: 550px;
+
   border-radius: 0.5rem;
+}
+#portafolio div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#portafolio h2{
+    margin: 10px 10px 10px 15px;
+
+    font-family: test;
+    
+}
+#portafolio article{
+    
+    margin: 0.4rem;
+    width: 19vw;
+    height: 230px;
+    
+    border-radius: 10px;
+    border: 1px solid rgb(49, 46, 46);
+    
 }

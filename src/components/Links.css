@@ -1,8 +1,46 @@
-#links {
-  background-color: purple;
-  margin-left: 28vw;
-  border-radius: 0.5rem;
-  width: 70vw;
-  height: 10vh;
+@font-face {
+  font-family: montserrat;
+  src: url("../assets/montserrat/Montserrat-Medium.otf");
 }
+@font-face {
+  font-family: montserrat-light;
+  src: url("../assets/montserrat/Montserrat-Light.otf");
+}
+@font-face {
+  font-family: test;
+  src: url("../assets/montserrat/Montserrat-ExtraBold.otf");
+}
+#links {
+  display: flex;
+  align-items: center;
+  
+  
+  background-color: #171717;
+  border: 1px solid rgb(49, 46, 46);
+  border-radius: 0.5rem;
 
+  width: 62vw;
+
+  margin: 0.5em;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  height: 69px;
+
+}
+#links .button-to{
+  text-decoration: none;
+  border: none;
+  color: white;
+  margin-left: 1rem;
+  padding: 0.8rem;
+  font-family: test;
+  background-color: #353535;
+  border-radius: 10px;
+  width: auto;
+  transition: all 0.3s ease;
+}
+#links .button-to:hover{
+  cursor: pointer;
+  background-color: #4382e9;
+
+}
