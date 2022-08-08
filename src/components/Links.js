@@ -7,10 +7,9 @@ class Links extends React.Component {
 
   render() {
     return <div id="links">
-      <Link className="button-to" to="/" name="Portafolio"
-      onCLick={this.props.changeTitle()}>Portafolio</Link>
-      <Link className="button-to" to="/" name="Curriculum">Curriculum</Link>
-      <Link className="button-to" to="/" >Vlog</Link>
+      <Link className="button-to" to="/">Portafolio</Link>
+      <Link className="button-to" to="/">Curriculum</Link>
+      <Link className="button-to" to="/">Vlog</Link>
     </div>;
   }
 }

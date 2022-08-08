@@ -19,7 +19,7 @@ class Myself extends React.Component {
           </p>
         </section>
         <section id="links-social">
-          <div className="test">
+          <div>
             <img src={githubBlack} alt="github"></img>
           </div>
           <div>
