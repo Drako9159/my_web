@@ -6,8 +6,9 @@
   font-family: montserrat-light;
   src: url("../assets/montserrat/Montserrat-Light.otf");
 }
-#myself {
+.container {
   display: flex;
+  
   align-items: center;
   justify-content: space-around;
   background-color: #171717;
@@ -15,14 +16,15 @@
   border-radius: 1rem;
   margin: 0.5rem;
   margin-top: -8rem;
-  
-  
   width: 350px;
   height: 450px;
   filter: drop-shadow(0px 0px 5px black);
   z-index: 100;
+  position: sticky;
+  top: 10vh;
 }
-#description {
+
+.description {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,7 +37,7 @@
   border-radius: 0.5rem;
   font-size: 1rem;
 }
-#description div {
+.description div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,18 +48,18 @@
   height: 100px;
   box-shadow: 0 0 4px 1px rgb(255, 255, 255);
 }
-#description div img {
+.description div img {
   width: 100px;
   border-radius: 100%;
   border: none;
 }
-#description p {
+.description p {
   text-align: center;
   margin-top: 100px;
   padding: 10px;
   color: rgb(184, 184, 184);
 }
-#links-social {
+.linksSocial {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -69,7 +71,7 @@
   padding: 1px;
   border: 1px solid rgb(49, 46, 46);
 }
-#links-social div {
+.linksSocial div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,21 +81,21 @@
   border-radius: 100%;
   border: 1px solid rgb(49, 46, 46);
 }
-#links-social div img {
+.linksSocial div img {
   filter: contrast(0%);
   width: 30px;
 }
-#links-social div:hover {
+.linksSocial div:hover {
   border-color: #3570d0;
   transition: all 1s ease;
 }
-#links-social div:hover > img {
+.linksSocial div:hover > img {
   width: 2.2rem;
   cursor: pointer;
   transition: all 0.1s ease;
 }
 
-#habilitis {
+.habilitis {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -106,7 +108,7 @@
   border-radius: 0.5rem;
   border: 1px solid rgb(49, 46, 46);
 }
-#habilitis p {
+.habilitis p {
   font-family: montserrat;
   font-size: 14px;
   padding: 5px;

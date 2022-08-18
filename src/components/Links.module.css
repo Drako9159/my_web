@@ -10,22 +10,19 @@
   font-family: test;
   src: url("../assets/montserrat/Montserrat-ExtraBold.otf");
 }
-#links {
+.container {
   display: flex;
   align-items: center;
-
   background-color: #171717;
   border: 1px solid rgb(49, 46, 46);
   border-radius: 0.5rem;
-
   width: 62vw;
-
   margin: 0.5em;
   margin-top: 4rem;
   margin-bottom: 1rem;
   height: 69px;
 }
-#links .button-to {
+.buttonTo {
   text-decoration: none;
   border: none;
   color: white;
@@ -37,7 +34,7 @@
   width: auto;
   transition: all 0.3s ease;
 }
-#links .button-to:hover {
+.buttonTo:hover {
   cursor: pointer;
   background-color: #4382e9;
 }

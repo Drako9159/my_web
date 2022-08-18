@@ -1,16 +1,23 @@
 import React from "react";
-import "./Links.css";
+import styles from "./Links.module.css";
 import { Link } from "react-router-dom";
+
+
 class Links extends React.Component {
-  
-
-
   render() {
-    return <div id="links">
-      <Link className="button-to" to="/">Portafolio</Link>
-      <Link className="button-to" to="/">Curriculum</Link>
-      <Link className="button-to" to="/">Vlog</Link>
-    </div>;
+    return (
+      <div className={styles.container}>
+        <button className={styles.buttonTo} to="/">
+          Portafolio
+        </button>
+        <button className={styles.buttonTo}>
+          Curriculum
+        </button>
+        <button className={styles.buttonTo}>
+          Vlog
+        </button>
+      </div>
+    );
   }
 }
 export default Links;

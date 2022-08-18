@@ -1,16 +1,19 @@
 import React from "react";
-import "./Myself.css";
+import styles from "./Myself.module.css";
 import myselfImg from "../assets/img/myself.jpg";
+
 import githubBlack from "../assets/icons/github-black.png";
 import mailBlack from "../assets/icons/mail-black.png";
 import twitterBlack from "../assets/icons/twitter-black.png";
 import whatsappBlack from "../assets/icons/whatsapp-black.png";
 
 class Myself extends React.Component {
+  
+
   render() {
     return (
-      <div id="myself">
-        <section id="description">
+      <div className={styles.container}>
+        <section className={styles.description}>
           <div>
             <img src={myselfImg} alt="img-myself"></img>
           </div>
@@ -18,7 +21,7 @@ class Myself extends React.Component {
             Desarrollador de softare e ingerieron en sistemas computacionales
           </p>
         </section>
-        <section id="links-social">
+        <section className={styles.linksSocial}>
           <div>
             <img src={githubBlack} alt="github"></img>
           </div>
@@ -32,7 +35,7 @@ class Myself extends React.Component {
             <img src={whatsappBlack} alt="whatsapp"></img>
           </div>
         </section>
-        <section id="habilitis">
+        <section className={styles.habilitis}>
           <p>Diseñador</p>
           <p>Testing</p>
           <p>CSS</p>
