@@ -21,6 +21,7 @@
   margin-top: 4rem;
   margin-bottom: 1rem;
   height: 69px;
+  filter: drop-shadow(0px 0px 2px black);
 }
 .buttonTo {
   text-decoration: none;
@@ -37,4 +38,14 @@
 .buttonTo:hover {
   cursor: pointer;
   background-color: #4382e9;
+}
+@media screen and (max-width: 901px) {
+  .container {
+    justify-content: center;
+    margin-top: 20rem;
+    width: 90vw;
+  }
+  .buttonTo {
+    margin: 0 5px 0 5px;
+  }
 }

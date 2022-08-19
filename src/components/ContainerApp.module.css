@@ -8,3 +8,10 @@
   margin: 0;
   padding: 0;
 }
+@media screen and (max-width: 901px){
+  .containerApp{
+    flex-direction: column;
+    height: 2200px;
+    background: linear-gradient(180deg, #FFC0CB 10%, #171717 10%);
+  }
+}

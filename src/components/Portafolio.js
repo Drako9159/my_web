@@ -1,13 +1,13 @@
 import React from "react";
 
-import "./Portafolio.css";
+import styles from "./Portafolio.module.css";
 
 class Portafolio extends React.Component {
   
   render() {
    
     return (
-      <div id="portafolio">
+      <div className={styles.container}>
         <h2>{this.props.titles}</h2>
         
         <div>

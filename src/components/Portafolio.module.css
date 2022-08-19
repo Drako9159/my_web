@@ -10,32 +10,42 @@
   font-family: test;
   src: url("../assets/montserrat/Montserrat-ExtraBold.otf");
 }
-#portafolio {
+.container {
   background-color: #171717;
   border: 1px solid rgb(49, 46, 46);
-
   width: 62vw;
   margin: 0.5rem;
   height: 550px;
-
+  
+  
   border-radius: 0.5rem;
 }
-#portafolio div {
+.container div {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-#portafolio h2 {
+.container h2 {
   margin: 10px 10px 10px 15px;
 
   font-family: test;
 }
-#portafolio article {
+.container article {
   margin: 0.4rem;
   width: 19vw;
   height: 230px;
-
+  min-width: 180px;
   border-radius: 10px;
   border: 1px solid rgb(49, 46, 46);
+}
+@media screen and (max-width: 901px){
+  .container {
+    width: 90vw;
+    
+  }
+  .container article {
+    width: 90%;
+  }
+
 }
