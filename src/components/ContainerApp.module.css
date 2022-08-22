@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  background: linear-gradient(180deg, #FFC0CB 26%, #171717 26%);
+  min-width: 330px;
+  background: linear-gradient(180deg, #FFC0CB 29%, #171717 29%);
   color: white;
   margin: 0;
   padding: 0;
@@ -12,6 +12,6 @@
   .containerApp{
     flex-direction: column;
     
-    background: linear-gradient(180deg, #FFC0CB 20%, #171717 20%);
+    background: linear-gradient(180deg, #FFC0CB 10%, #171717 10%);
   }
 }

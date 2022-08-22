@@ -8,20 +8,21 @@
 }
 .container {
   display: flex;
-  
   align-items: center;
   justify-content: space-around;
   background-color: #171717;
   flex-direction: column;
-  border-radius: 1rem;
-  margin: 0.5rem;
-  margin-top: -8rem;
-  width: 350px;
-  height: 450px;
+  border-radius: 10px;
+  margin: 10px;
+  margin-top: -250px;
+  
+  height: 400px;
   filter: drop-shadow(0px 0px 2px black);
   z-index: 100;
   position: sticky;
-  top: 10vh;
+  top: 30px;
+  min-width: 350px;
+  box-sizing: border-box;
 }
 
 .description {
@@ -30,12 +31,15 @@
   justify-content: center;
   align-items: center;
   width: 320px;
+  box-sizing: border-box;
+  
   height: 150px;
   background-color: transparent;
   border: 1px solid rgb(49, 46, 46);
   font-family: montserrat;
-  border-radius: 0.5rem;
-  
+  border-radius: 10px;
+  box-sizing: border-box;
+  min-width: 330px;
 }
 .description div {
   display: flex;
@@ -58,12 +62,12 @@
   text-align: center;
   top: 30px;
 }
-.description section > h3{
+.description section > h3 {
   color: white;
-  font-size: 1.2rem;
+  font-size: 20px;
 }
-.description section > h4{
-  font-size: 0.9rem;
+.description section > h4 {
+  font-size: 15px;
   color: rgb(184, 184, 184);
 }
 .linksSocial {
@@ -73,9 +77,10 @@
   width: 320px;
   height: 100px;
   background-color: transparent;
-  border-radius: 0.5rem;
-  padding: 1px;
+  border-radius: 10px;
+  
   border: 1px solid rgb(49, 46, 46);
+  min-width: 330px;
 }
 .linksSocial div {
   display: flex;
@@ -111,8 +116,9 @@
   height: 100px;
   background-color: transparent;
   font-size: 1.5rem;
-  border-radius: 0.5rem;
+  border-radius: 10px;
   border: 1px solid rgb(49, 46, 46);
+  min-width: 330px;
 }
 .habilitis p {
   font-family: montserrat;
@@ -123,47 +129,36 @@
   background-color: #1e2b41;
   border-radius: 20px;
 }
-.changePosition{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #171717;
-  flex-direction: column;
-  border-radius: 1rem;
-  margin: 0.5rem;
-  margin-top: -8rem;
-  width: 350px;
-  height: 450px;
-  filter: drop-shadow(0px 0px 2px black);
-  z-index: 100;
-  position: relative;
-  top: 10vh;
-}
-@media screen and (max-width: 901px){
-  .container{
+
+@media screen and (max-width: 901px) {
+  .container {
+    
     width: 90vw;
-   
+    height: 360px;
+    position: static;
     
-    height: 340px;
-    
+    margin-top: 100px;
   }
-  .description{
+
+  .description {
     margin: 10px 0 10px 0;
     width: 85vw;
-    height: 130px;
-    
+    height: 150px;
   }
-  .linksSocial{
+  .description h3{
+    margin-top: 20px;
+  }
+  
+  .linksSocial {
     width: 85vw;
     height: 80px;
     margin: 0 0 10px 0;
   }
-  .linksSocial div{
+  .linksSocial div {
     width: 50px;
     height: 50px;
-    
   }
-  .habilitis{
+  .habilitis {
     width: 85vw;
     height: 100px;
     margin: 0 0 10px 0;

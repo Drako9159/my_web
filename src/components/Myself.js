@@ -6,8 +6,7 @@ import githubBlack from "../assets/icons/github-black.png";
 import mailBlack from "../assets/icons/mail-black.png";
 import twitterBlack from "../assets/icons/twitter-black.png";
 import whatsappBlack from "../assets/icons/whatsapp-black.png";
-import SendWhatsapp from "./SendWhatsapp";
-import { useEffect } from "react";
+
 
 
 const drako = {
@@ -21,19 +20,8 @@ const drako = {
   description: "Systems Enginner & Software Developer",
 };
 
-function handleScroll(e) {
-  e.preventDefault();
-  let val0 = document.querySelector("#container")
-  val0.className = styles.changePosition
-  console.log("lol")
-}
-window.addEventListener("mouseUp", handleScroll);
 
 //window.scroll({top: -100, left: 100, behavior: "smooth"})
-
-
-
-
 
 
 class Myself extends React.Component {
@@ -50,24 +38,24 @@ class Myself extends React.Component {
           </section>
         </section>
         <section className={styles.linksSocial}>
-          <a href={drako.github} target="_blank">
+          <a href={drako.github} target="_blank" rel="noreferrer">
             <div>
               <img src={githubBlack} alt="github"></img>
             </div>
           </a>
           <a href={`mailto:${drako.email}`}>
             <div>
-              <img src={mailBlack} alt="mail"></img>
+              <img src={mailBlack} alt="mail" rel="noreferrer"></img>
             </div>
           </a>
-          <a href={drako.twitter} target="_blank">
+          <a href={drako.twitter} target="_blank" rel="noreferrer">
             <div>
-              <img src={twitterBlack} alt="twitter"></img>
+              <img src={twitterBlack} alt="twitter" rel="noreferrer"></img>
             </div>
           </a>
-          <a href={`whatsapp://send/?phone=${drako.num}`} target="_blank">
+          <a href={`whatsapp://send/?phone=${drako.num}`} target="_blank" rel="noreferrer">
             <div>
-              <img src={whatsappBlack} alt="whatsapp"></img>
+              <img src={whatsappBlack} alt="whatsapp" rel="noreferrer"></img>
             </div>
           </a>
         </section>
