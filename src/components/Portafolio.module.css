@@ -25,6 +25,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  
 }
 .container h2 {
   margin: 10px 10px 10px 15px;
@@ -38,14 +39,17 @@
   min-width: 180px;
   border-radius: 10px;
   border: 1px solid rgb(49, 46, 46);
+  
 }
 @media screen and (max-width: 901px){
   .container {
     width: 90vw;
+    box-sizing: border-box;
     
   }
   .container article {
-    width: 90%;
+    
+    box-sizing: border-box;
   }
 
 }

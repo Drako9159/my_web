@@ -1,11 +1,14 @@
 import React from "react";
 import styles from "./Myself.module.css";
+import "./Myself.module.css"
 import myselfImg from "../assets/img/myself.jpg";
 import githubBlack from "../assets/icons/github-black.png";
 import mailBlack from "../assets/icons/mail-black.png";
 import twitterBlack from "../assets/icons/twitter-black.png";
 import whatsappBlack from "../assets/icons/whatsapp-black.png";
 import SendWhatsapp from "./SendWhatsapp";
+import { useEffect } from "react";
+
 
 const drako = {
   name: "Antonio Jaramillo",
@@ -15,21 +18,36 @@ const drako = {
   num: "525532317335",
   whatsapp: "whatsapp://send/?phone=52553231733",
   email: "drako9159@gmail.com",
-  description: "Systems Enginner & Software Developer"
+  description: "Systems Enginner & Software Developer",
 };
+
+function handleScroll(e) {
+  e.preventDefault();
+  let val0 = document.querySelector("#container")
+  val0.className = styles.changePosition
+  console.log("lol")
+}
+window.addEventListener("mouseUp", handleScroll);
+
+//window.scroll({top: -100, left: 100, behavior: "smooth"})
+
+
+
+
+
 
 class Myself extends React.Component {
   render() {
     return (
-      <div className={styles.container}>
+      <div id="container" className={styles.container}>
         <section className={styles.description}>
           <div>
             <img src={myselfImg} alt="img-myself"></img>
           </div>
-          <p>
-          <h2>{drako.name}</h2>
-          <h3>{drako.description}</h3>
-          </p>
+          <section>
+            <h3>{drako.name}</h3>
+            <h4>{drako.description}</h4>
+          </section>
         </section>
         <section className={styles.linksSocial}>
           <a href={drako.github} target="_blank">
@@ -53,7 +71,7 @@ class Myself extends React.Component {
             </div>
           </a>
         </section>
-      
+
         <section className={styles.habilitis}>
           <p>PostgresSQL</p>
           <p>Testing</p>

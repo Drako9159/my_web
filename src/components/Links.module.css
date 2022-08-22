@@ -42,7 +42,7 @@
 @media screen and (max-width: 901px) {
   .container {
     justify-content: center;
-    margin-top: 20rem;
+    
     width: 90vw;
   }
   .buttonTo {
