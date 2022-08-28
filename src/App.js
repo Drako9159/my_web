@@ -2,8 +2,6 @@
 import "./App.css";
 import ContainerApp from "./components/ContainerApp"
 import React from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-
 
 function App() {
   return (

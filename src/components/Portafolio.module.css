@@ -17,36 +17,36 @@
   margin: 0.5rem;
   min-width: 330px;
   border-radius: 10px;
+  min-height: 700px;
+}
+
+.container h2 {
+  box-sizing: border-box;
+  margin: 10px 10px 10px 15px;
+  font-family: test;
+  color: white;
 }
 .container div {
   display: flex;
+  height: 90vh;
+  padding: 10px;
+  margin: 10px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  
-}
-.container h2 {
-  margin: 10px 10px 10px 15px;
-  font-family: test;
-}
-.container article {
-  margin: 5px;
-  width: 19vw;
-  height: 200px;
-  min-width: 220px;
-  border-radius: 10px;
+  background-color: red;
   border: 1px solid rgb(49, 46, 46);
-  
+  border-radius: 10px;
   
 }
+
+
 @media screen and (max-width: 901px){
   .container {
     width: 90vw;
     box-sizing: border-box;
     
   }
-  .container article {
-    width: 85vw;
-  }
+  
 
 }
