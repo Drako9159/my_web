@@ -12,16 +12,13 @@
 }
 .container {
   display: flex;
-  
+
   align-items: center;
   background-color: #171717;
   border: 1px solid rgb(49, 46, 46);
   border-radius: 10px;
   width: 62vw;
-  margin-left: 10px;
-  
-  margin-top: 15%;
-  margin-bottom: 19px;
+  margin-left: 5px;
   height: 69px;
   filter: drop-shadow(0px 0px 2px black);
   min-width: 330px;
@@ -53,11 +50,17 @@
 
 @media screen and (max-width: 901px) {
   .container {
+    padding: 0;
+    width: 95vw;
+
+    margin-bottom: 10px;
     justify-content: center;
-    margin-top: 0;
-    width: 90vw;
   }
-  .buttonTo {
-    margin: 0 5px 0 5px;
+  .btn0,
+  .btn1,
+  .btn2 {
+    
+    margin: 5px;
+    
   }
 }

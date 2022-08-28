@@ -2,17 +2,20 @@ import styles from "./ContainerApp.module.css";
 import MySelft from "./Myself";
 import "./Myself.module.css";
 import SubMenu from "./SubMenu";
-import Footer from "./Footer"
+import Footer from "./Footer";
 
 export default function ContainerApp() {
   return (
-    <div className={styles.containerApp}>
-      <div className={styles.strap}>
+    <div className={styles.container}>
+      <div className={styles.panoramic}></div>
+      <div className={styles.menu}>
         <MySelft />
+
         <SubMenu />
-        
       </div>
-      <Footer />
+      <div className={styles.footer}>
+        <Footer />
+      </div>
     </div>
   );
 }

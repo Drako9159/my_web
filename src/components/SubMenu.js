@@ -1,6 +1,6 @@
 import Links from "./Links";
 import Portafolio from "./Portafolio";
-import Curriculum from "./Curriculum"
+import Curriculum from "./Curriculum";
 import React from "react";
 import styles from "./Links.module.css";
 const sbtn0 = styles.btn0;
@@ -24,27 +24,25 @@ class SubMenu extends React.Component {
     this.setState({
       btn0: !this.state.btn0,
       btn1: false,
-      btn2: false
-      
+      btn2: false,
     });
   };
   renderBtn1 = () => {
     this.setState({
       btn1: !this.state.btn1,
       btn0: false,
-      btn2: false
+      btn2: false,
     });
   };
   renderBtn2 = () => {
     this.setState({
       btn2: !this.state.btn2,
       btn1: false,
-      btn0: false
+      btn0: false,
     });
   };
 
   render() {
-    
     return (
       <div>
         <Links
@@ -53,7 +51,12 @@ class SubMenu extends React.Component {
           renderBtn1={this.renderBtn1}
           renderBtn2={this.renderBtn2}
         />
-        <Portafolio name={this.state.name}/>
+        <Portafolio
+          name={this.state.name}
+          btn0={this.state.btn0}
+          btn1={this.state.btn1}
+          btn2={this.state.btn2}
+        />
       </div>
     );
   }

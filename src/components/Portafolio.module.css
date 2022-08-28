@@ -14,39 +14,38 @@
   background-color: #171717;
   border: 1px solid rgb(49, 46, 46);
   width: 62vw;
-  margin: 0.5rem;
+  margin-top: 15px;
+  margin-left: 5px;
+  margin-bottom: 10px;
   min-width: 330px;
   border-radius: 10px;
-  min-height: 700px;
 }
 
-.container h2 {
+.container h1 {
   box-sizing: border-box;
   margin: 10px 10px 10px 15px;
   font-family: test;
   color: white;
+  
 }
-.container div {
-  display: flex;
-  height: 90vh;
-  padding: 10px;
-  margin: 10px;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  background-color: red;
-  border: 1px solid rgb(49, 46, 46);
+.main {
+  height: 100%;
+  margin-bottom: 5px;
   border-radius: 10px;
   
 }
+.main div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-
-@media screen and (max-width: 901px){
+@media screen and (max-width: 901px) {
   .container {
-    width: 90vw;
-    box-sizing: border-box;
-    
+    width: 95vw;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
   }
-  
-
 }

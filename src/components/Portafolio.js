@@ -3,33 +3,16 @@ import Curriculum from "./Curriculum";
 import styles from "./Portafolio.module.css";
 import Projects from "./Projects";
 
-const projects = [
-  {
-    name: "Rick & Morty",
-  },
-  {
-    name: "Customer Service",
-  },
-];
-/*
-<h2>{this.props.name}</h2>
-        <div>
-          {projects.map((e) => {
-            return (
-              <article key={e.name}>
-                <h1>{e.name}</h1>
-              </article>
-            );
-          })}
-        </div>*/
 class Portafolio extends React.Component {
   render() {
     return (
       <div className={styles.container}>
-        <h2>{this.props.name}</h2>
-        <div className={styles.links}>
-          
+        <h1>{this.props.name}</h1>
+        <div className={styles.main}>
+          <div>{this.props.btn0 ? <Projects /> : false}</div>
+          <div>{this.props.btn1 ? <Curriculum /> : false}</div>
         </div>
+        
       </div>
     );
   }
