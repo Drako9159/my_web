@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Links.module.css";
-import Portafolio from "./Portafolio";
+import "./Links.module.css";
 
 class Links extends React.Component {
   handlerName = (e) => {
@@ -17,26 +17,29 @@ class Links extends React.Component {
       this.props.renderBtn2();
     }
   };
-  
 
   render() {
     return (
       <div className={styles.container}>
         <button
-          className={styles.btn0}
+          className={this.props.btnStyle0}
           onClick={this.handlerName}
           value="Portafolio"
         >
           Portafolio
         </button>
         <button
-          className={styles.btn1}
+          className={this.props.btnStyle1}
           onClick={this.handlerName}
           value="Curriculum"
         >
           Curriculum
         </button>
-        <button className={styles.btn2} onClick={this.handlerName} value="Vlog">
+        <button
+          className={this.props.btnStyle2}
+          onClick={this.handlerName}
+          value="Vlog"
+        >
           Vlog
         </button>
       </div>

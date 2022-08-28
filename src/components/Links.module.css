@@ -23,8 +23,31 @@
   filter: drop-shadow(0px 0px 2px black);
   min-width: 330px;
 }
-.btn0,
-.btn1,
+
+.btn0 {
+  text-decoration: none;
+  border: none;
+  color: white;
+  margin-left: 1rem;
+  padding: 0.8rem;
+  font-family: test;
+  background-color: #353535;
+  border-radius: 10px;
+  width: auto;
+  transition: all 0.3s ease;
+}
+.btn1 {
+  text-decoration: none;
+  border: none;
+  color: white;
+  margin-left: 1rem;
+  padding: 0.8rem;
+  font-family: test;
+  background-color: #353535;
+  border-radius: 10px;
+  width: auto;
+  transition: all 0.3s ease;
+}
 .btn2 {
   text-decoration: none;
   border: none;
@@ -37,12 +60,31 @@
   width: auto;
   transition: all 0.3s ease;
 }
+
 .btnCheck {
+  text-decoration: none;
+  border: none;
+  color: white;
+  margin-left: 1rem;
+  padding: 0.8rem;
+  font-family: test;
+  border-radius: 10px;
+  width: auto;
+  transition: all 0.3s ease;
   background-color: #4382e9;
 }
+.btnCheck:hover {
+  background-color: #225ab4;
+}
 
-.btn0:hover,
-.btn1:hover,
+.btn0:hover {
+  cursor: pointer;
+  background-color: #4382e9;
+}
+.btn1:hover {
+  cursor: pointer;
+  background-color: #4382e9;
+}
 .btn2:hover {
   cursor: pointer;
   background-color: #4382e9;
@@ -59,8 +101,6 @@
   .btn0,
   .btn1,
   .btn2 {
-    
     margin: 5px;
-    
   }
 }
