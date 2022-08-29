@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Links.module.css";
-import "./Links.module.css";
+
 
 class Links extends React.Component {
   handlerName = (e) => {

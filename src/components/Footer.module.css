@@ -1,6 +1,26 @@
+
+@font-face {
+    font-family: montserrat-light;
+    src: url("../assets/montserrat/Montserrat-Regular.otf");
+  }
 .container{
-  
+    font-family: montserrat-light;
+    color: white;
+    display: flex;
+    list-style: none;
     width: 100%;
-    height: 100px;
-    background-color: #313131;
+    background-color: #242424;
+    justify-content: space-between;
+}
+.container a{
+    color: white;
+}
+.container ul{
+    padding: 5px;
+    list-style: none;
+}
+.date{
+    padding: 0;
+    margin-top: 70px;
+    margin-bottom: 0;
 }

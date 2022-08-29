@@ -12,7 +12,6 @@
 }
 .container {
   display: flex;
-
   align-items: center;
   background-color: #171717;
   border: 1px solid rgb(49, 46, 46);
@@ -29,7 +28,7 @@
   border: none;
   color: white;
   margin-left: 1rem;
-  padding: 0.8rem;
+  padding: 15px;
   font-family: test;
   background-color: #353535;
   border-radius: 10px;
@@ -41,7 +40,7 @@
   border: none;
   color: white;
   margin-left: 1rem;
-  padding: 0.8rem;
+  padding: 15px;
   font-family: test;
   background-color: #353535;
   border-radius: 10px;
@@ -53,7 +52,7 @@
   border: none;
   color: white;
   margin-left: 1rem;
-  padding: 0.8rem;
+  padding: 15px;
   font-family: test;
   background-color: #353535;
   border-radius: 10px;
@@ -61,7 +60,7 @@
   transition: all 0.3s ease;
 }
 
-.btnCheck {
+.btn0Check {
   text-decoration: none;
   border: none;
   color: white;
@@ -71,29 +70,56 @@
   border-radius: 10px;
   width: auto;
   transition: all 0.3s ease;
-  background-color: #4382e9;
+  background-color: #0f6bff;
+  box-shadow: 0 0 5px #0f6bff;
 }
-.btnCheck:hover {
-  background-color: #225ab4;
+.btn1Check {
+  text-decoration: none;
+  border: none;
+  color: white;
+  margin-left: 1rem;
+  padding: 0.8rem;
+  font-family: test;
+  border-radius: 10px;
+  width: auto;
+  transition: all 0.3s ease;
+  background-color: #059700;
+  box-shadow: 0 0 5px #06b100;
 }
-
+.btn2Check {
+  text-decoration: none;
+  border: none;
+  color: white;
+  margin-left: 1rem;
+  padding: 0.8rem;
+  font-family: test;
+  border-radius: 10px;
+  width: auto;
+  transition: all 0.3s ease;
+  background-color: #ffbf0f;
+  box-shadow: 0 0 5px #ffc832;
+}
 .btn0:hover {
+  background-color: #0f6bff;
+  box-shadow: 0 0 5px #0f6bff;
   cursor: pointer;
-  background-color: #4382e9;
 }
 .btn1:hover {
+  background-color: #059700;
+  box-shadow: 0 0 5px #06b100;
   cursor: pointer;
-  background-color: #4382e9;
 }
 .btn2:hover {
+  background-color: #ffbf0f;
+  box-shadow: 0 0 5px #ffc832;
   cursor: pointer;
-  background-color: #4382e9;
 }
 
 @media screen and (max-width: 901px) {
   .container {
     padding: 0;
     width: 95vw;
+    margin: 0;
 
     margin-bottom: 10px;
     justify-content: center;
@@ -102,5 +128,10 @@
   .btn1,
   .btn2 {
     margin: 5px;
+  }
+  .btn0Check,
+  .btn1Check,
+  .btn2Check {
+    margin: 10%;
   }
 }

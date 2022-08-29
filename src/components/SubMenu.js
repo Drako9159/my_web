@@ -2,7 +2,8 @@ import Links from "./Links";
 import Portafolio from "./Portafolio";
 import React from "react";
 import styles from "./Links.module.css";
-import "./Links.module.css";
+import stylesContainer from "./ContainerApp.module.css"
+import stylesMyself from "./Myself.module.css"
 
 class SubMenu extends React.Component {
   state = {
@@ -20,7 +21,7 @@ class SubMenu extends React.Component {
       name: title,
     });
   };
-
+  
   renderBtn0 = () => {
     if(this.state.btn0){
       return 
@@ -29,10 +30,14 @@ class SubMenu extends React.Component {
       btn0: !this.state.btn0,
       btn1: false,
       btn2: false,
-      btnStyle0: styles.btnCheck,
+      btnStyle0: styles.btn0Check,
       btnStyle1: styles.btn1,
       btnStyle2: styles.btn2,
     });
+    this.props.setStyle(stylesContainer.container0)
+    this.props.setHabilitis(stylesMyself.habilitis0)
+    this.props.setRound(stylesMyself.setBtn0)
+    
   };
   renderBtn1 = () => {
     if(this.state.btn1){
@@ -42,10 +47,13 @@ class SubMenu extends React.Component {
       btn1: !this.state.btn1,
       btn0: false,
       btn2: false,
-      btnStyle1: styles.btnCheck,
+      btnStyle1: styles.btn1Check,
       btnStyle2: styles.btn2,
       btnStyle0: styles.btn0,
     });
+    this.props.setStyle(stylesContainer.container1)
+    this.props.setHabilitis(stylesMyself.habilitis1)
+    this.props.setRound(stylesMyself.setBtn1)
   };
   renderBtn2 = () => {
     if(this.state.btn2){
@@ -55,10 +63,14 @@ class SubMenu extends React.Component {
       btn2: !this.state.btn2,
       btn1: false,
       btn0: false,
-      btnStyle2: styles.btnCheck,
+      btnStyle2: styles.btn2Check,
       btnStyle1: styles.btn1,
       btnStyle0: styles.btn0,
     });
+    this.props.setStyle(stylesContainer.container2)
+    this.props.setHabilitis(stylesMyself.habilitis2)
+    this.props.setRound(stylesMyself.setBtn2)
+    
   };
 
   render() {
@@ -72,6 +84,7 @@ class SubMenu extends React.Component {
           btnStyle0={this.state.btnStyle0}
           btnStyle1={this.state.btnStyle1}
           btnStyle2={this.state.btnStyle2}
+        
         />
         <Portafolio
           name={this.state.name}
