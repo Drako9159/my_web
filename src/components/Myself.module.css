@@ -67,7 +67,6 @@
   margin-top: 40px;
   color: white;
   font-size: 20px;
-  
 }
 .description section > h4 {
   margin-top: -15px;
@@ -101,13 +100,13 @@
   width: 30px;
 }
 
-.setBtn0:hover{
+.setBtn0:hover {
   color: #0043af;
 }
-.setBtn1:hover{
+.setBtn1:hover {
   color: #06b800;
 }
-.setBtn2:hover{
+.setBtn2:hover {
   color: #cc9600;
 }
 .linksSocial div:hover {
@@ -124,7 +123,7 @@
 .habilitis,
 .habilitis0,
 .habilitis1,
-.habilitis2{
+.habilitis2 {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -177,25 +176,24 @@
   border-radius: 20px;
 }
 @media screen and (max-width: 901px) {
-  .container{
+  .container {
     width: 95vw;
     margin: 0;
     position: relative;
-    
+
     top: 0;
     margin-bottom: 10px;
   }
-  .description{
+  .description {
     width: 90vw;
   }
-  .linksSocial{
+  .linksSocial {
     width: 90vw;
   }
   .habilitis,
   .habilitis0,
   .habilitis1,
-  .habilitis2{
+  .habilitis2 {
     width: 90vw;
   }
-  
 }

@@ -1,0 +1,9 @@
+@font-face {
+  font-family: monse;
+  src: url("../assets/montserrat/Montserrat-Regular.otf");
+}
+.container {
+  color: white;
+  font-family: monse;
+  font-weight: bolder;
+}

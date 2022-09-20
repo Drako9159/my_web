@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Links.module.css";
 
-
 class Links extends React.Component {
   handlerName = (e) => {
     let title = e.target.value;
@@ -10,7 +9,7 @@ class Links extends React.Component {
     if (title === "Portafolio") {
       this.props.renderBtn0();
     }
-    if (title === "Curriculum") {
+    if (title === "Currículum") {
       this.props.renderBtn1();
     }
     if (title === "Vlog") {
@@ -31,9 +30,9 @@ class Links extends React.Component {
         <button
           className={this.props.btnStyle1}
           onClick={this.handlerName}
-          value="Curriculum"
+          value="Currículum"
         >
-          Curriculum
+          Currículum
         </button>
         <button
           className={this.props.btnStyle2}

@@ -1,0 +1,20 @@
+@font-face {
+  font-family: monse;
+  src: url("../assets/montserrat/Montserrat-Regular.otf");
+}
+.container {
+  color: white;
+  font-family: monse;
+  width: 96%;
+  align-items: left;
+}
+.container h2 {
+  text-align: left;
+  background-color: green;
+  display: flex;
+}
+@media screen and (max-width: 901px) {
+  .container {
+    font-size: 12px;
+  }
+}

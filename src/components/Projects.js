@@ -1,6 +1,7 @@
 import styles from "./Projects.module.css";
 
 import src0 from "../assets/img/rickAndMorty.png";
+import src1 from "../assets/img/container.astro.png";
 
 const projects = [
   {
@@ -12,34 +13,13 @@ const projects = [
   },
   {
     id: 2,
-    name: "Ecomerce",
+    name: "Astro Container",
     description: "Best market",
-    url: "None",
-    src: src0,
+    url: "https://containers-pied.vercel.app/",
+    src: src1,
   },
   {
     id: 3,
-    name: "Timer",
-    description: "consult your climate",
-    url: "none",
-    src: src0,
-  },
-  {
-    id: 4,
-    name: "Timer",
-    description: "consult your climate",
-    url: "none",
-    src: src0,
-  },
-  {
-    id: 5,
-    name: "Timer",
-    description: "consult your climate",
-    url: "none",
-    src: src0,
-  },
-  {
-    id: 6,
     name: "Timer",
     description: "consult your climate",
     url: "none",

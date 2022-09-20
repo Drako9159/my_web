@@ -2,6 +2,7 @@ import React from "react";
 import Curriculum from "./Curriculum";
 import styles from "./Portafolio.module.css";
 import Projects from "./Projects";
+import Vlog from "./Vlog";
 
 class Portafolio extends React.Component {
   render() {
@@ -11,8 +12,8 @@ class Portafolio extends React.Component {
         <div className={styles.main}>
           <div>{this.props.btn0 ? <Projects /> : false}</div>
           <div>{this.props.btn1 ? <Curriculum /> : false}</div>
+          <div>{this.props.btn2 ? <Vlog /> : false}</div>
         </div>
-        
       </div>
     );
   }
