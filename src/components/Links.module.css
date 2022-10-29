@@ -17,6 +17,7 @@
   border: 1px solid rgb(49, 46, 46);
   border-radius: 10px;
   width: 62vw;
+  max-width: 820px;
   margin-left: 5px;
   height: 69px;
   filter: drop-shadow(0px 0px 2px black);

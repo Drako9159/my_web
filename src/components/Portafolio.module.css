@@ -14,7 +14,10 @@
   background-color: #171717;
   border: 1px solid rgb(49, 46, 46);
   width: 62vw;
+  max-width: 820px;
+ 
   margin-top: 15px;
+  
   margin-left: 5px;
   margin-bottom: 10px;
   min-width: 330px;
